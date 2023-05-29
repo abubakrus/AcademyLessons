@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.example.academylessans.R
 import com.example.academylessans.databinding.ActivityLoginMainBinding
 
 class LoginMainActivity : AppCompatActivity() {
@@ -19,7 +20,7 @@ class LoginMainActivity : AppCompatActivity() {
             binding.registrationInMusicList.setOnClickListener{navigateToMusicRegistration()}
             when{
                 loginText.isEmpty()->{
-                    showToast("Заполните поле ввода для логин")
+                    showToast(getString(R.string.fill_in_the_login_input_field))
                 }
                 !loginText.contains("@gmail.com")->{
                     showToast("Неправельный ввод данных в логине ")
