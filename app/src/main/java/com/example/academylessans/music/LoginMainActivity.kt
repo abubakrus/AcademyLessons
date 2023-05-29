@@ -23,13 +23,13 @@ class LoginMainActivity : AppCompatActivity() {
                     showToast(getString(R.string.fill_in_the_login_input_field))
                 }
                 !loginText.contains("@gmail.com")->{
-                    showToast("Неправельный ввод данных в логине ")
+                    showToast(getString(R.string.incorrect_login_data_entry))
                 }
                 passwordText.isEmpty()->{
-                    showToast("Заполните поле ввода для password")
+                    showToast(getString(R.string.fill_in_the_input_field_for_password))
                 }
                 passwordText.length <= 8->{
-                    showToast("Заполните правельно поле ввода для password")
+                    showToast(getString(R.string.fill_in_the_correct_input_field_for_password))
                 }
                 else ->{
                     navigateToMusicListActivity()

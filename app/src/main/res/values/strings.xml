@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">AcademyLessans</string>
     <string name="fill_in_the_login_input_field">Заполните поле ввода для логин</string>
+    <string name="incorrect_login_data_entry">Неправельный ввод данных в логине</string>
+    <string name="fill_in_the_input_field_for_password">Заполните поле ввода для пароль</string>
+    <string name="fill_in_the_correct_input_field_for_password">Заполните правельно поле ввода для пароль</string>
 </resources>
